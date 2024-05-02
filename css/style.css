@@ -1,0 +1,793 @@
+/* **************************************************************** */
+/*    DANS ROOT ON DEFINIT DES COULEURS DE BASES REUTILISABLES      */
+/* **************************************************************** */
+:root {
+    --bg-color: rgb(139, 195, 245);
+    --bt-color: rgba(18, 89, 156, 0.548);
+    --ft--color: rgb(#1294b8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* **************************************************************** */
+/*                            HEADER                                */
+/* **************************************************************** */
+
+/* Style the navigation menu                                        */
+header {
+    /* height : 150px;    */
+    padding-top: 20px;
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+    padding-bottom: 20px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    position: relative;
+}
+  
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+  
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    color: black;
+}
+  
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav p{
+    margin: 10px 100px 0px 100px;
+    color: white;
+    font-size: 30px;
+}
+.fbook {
+    margin: 10px 10px 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+.fbook i {
+    padding-left: 20px;
+}
+
+
+/* .header-entete nav{
+    margin: 10px 200px 0px 100px;
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+.header-entete p{
+    margin: 10px 100px 0px 100px;
+    font-size: 30px;
+}
+.header-entete i {
+    margin: 10px 10px 0px 10px;
+    width: 35px;
+    font-size: 15px;
+}
+.nav-link {
+    margin: 10px 10px 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+*/
+
+/* ---------------------------------------------------------------- */
+/* Changement de couleur sur survol                                 */
+.fbook i:hover {
+    color: rgb(89, 60, 184);
+    cursor: pointer;
+}
+.header-entete i:hover {
+    color: rgb(89, 60, 184);
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* **************************************************************** */
+/*                      PAGE 1 => SUBCSRIBE                         */
+/* **************************************************************** */
+#subscribe {
+    height:100vh;
+    display: flex;
+    justify-content: center; 
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+    
+    padding-left: 10px;
+    /* align-items: flex-start; */
+}
+
+.subscribe-topic {
+   width: 400px;
+   padding-top: 70px;   
+   padding-bottom: 50px;
+   padding-right: 40px;
+}
+
+.subscribe-text {
+    padding-bottom: 50px;
+}
+
+.subscribe-text h1 {
+    color: black;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.subscribe-texte p {
+    color: black;
+    font-size: 10px;    
+}
+
+/* ---------------------------------------------------------------- */
+/* ==> Superposition des champs EMAIL + BOUTON SUBSCRIBE            */
+/* PARENT */
+.subscribe-mailparent {
+    position: relative;
+}
+
+/* ENFANT 1 */
+.subscribe-email {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* width: 400px; */
+    height: 40px;
+    border: none;
+    color: rgb(187, 182, 182);
+    border-radius: 20px 20px 20px 20px;
+    background: rgba(235, 242, 245, 0.548);
+    padding: 10px;
+} 
+
+/* ENFANT 2 */
+.subscribe-bouton {
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* right: 70px; */
+    width: 150px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    background: var(--bt-color);
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Affichage de l'image avec le chat                                */
+.subscribe-image {
+    width: 500px;
+}
+.subscribe-image img {
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover;  */
+    /* padding-left: 150px; */
+    margin-top: 50px;
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Survol du bouton Subsribe                                        */
+.subscribe-bouton:hover {
+    background: rgb(89, 60, 184); 
+}
+/* ---------------------------------------------------------------- */
+
+/* **************************************************************** */
+/*                      BOUTON FLECHE FIXE                         */
+/* **************************************************************** */
+ .subscribe-arrow {
+    color: rgb(56, 53, 53);
+    font-size: 50px;
+    bottom: 100px;
+    right: 30px;
+    position: fixed;
+}
+
+.subscribe-arrow a {
+    text-decoration: none;
+}    
+
+.subscribe-arrow {
+    cursor: pointer;
+}
+
+/* **************************************************************** */
+/*                         PAGE 2 => FEATURES                       */
+/* **************************************************************** */
+.features-intro {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.features-allcard {   
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+} 
+
+.features-card {   
+    background: var(--bg-color);
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.features-image i {
+    width: 300px;    
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 60px;
+}
+
+.features-text h2 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.features-text p {    
+    font-size: 14px;
+    color: white;
+    text-align: center;  
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+/* ---------------------------------------------------------------- */
+/* Effet Survol : On remonte de 10px                                */
+.features-card:hover {
+    transform: translateY(-10px);
+    transition: 1s;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* **************************************************************** */
+/*                      PAGE 2bis => HOW IT'S WORK                  */
+/* **************************************************************** */
+.howitworks-2 {
+    overflow: hidden;
+    height: 200px;
+    background-color:rgb(241, 238, 238);
+    text-align: center;
+    padding-top: 70px;
+}
+.howitworks-2 h2 {
+    padding-bottom: 20px;
+}
+
+/* **************************************************************** */
+/*                         PAGE 3 => TEAM                           */
+/* **************************************************************** */
+#team {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    justify-content: center;    
+}   
+
+.team-intro h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    /* padding-left: 500px;
+    padding-right: 500px; */
+} 
+.team-intro p {
+    text-align: center; 
+    /* padding-left: 420px;
+    padding-right: 420px;    */
+}    
+
+.team-allmember{
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.team-member h2 {
+    text-align: center;
+    padding-top: 10px;
+} 
+.team-member p {
+    text-align: center;
+    padding-bottom: 40px;
+}  
+
+/* ---------------------------------------------------------------- */
+/* Gestion de l'affichage des icônes au-dessus de l'image           */
+.member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 200px;
+}
+
+.member .icones {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    /* On positionne les icones à côté de l'image                  */
+    /* et comme on a mis 1 overflow: hidden on ne les voit pas     */
+    top:0;
+    left: -30px;
+    gap:5px;
+    transition: 1s;
+}
+.member .icones i {
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.member:hover .icones {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Gestion de l'image en affichage normal                           */
+.team-member img {
+    width: 200px;
+    height: 200px;
+
+    /* On met l'image dans un rond */
+    border-radius: 50%;
+    
+    /* On met l'image en noir/blanc */
+    filter:grayscale(1);
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Gestion de l'image en SURVOL                                     */
+.team-member img:hover {
+    /* On remet l'image en couleur sur survol */
+    filter:grayscale(0);
+
+    /* Zoom sur l'image */    
+    scale: 1.1;
+    transition: 1s;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* **************************************************************** */
+/*                   PAGE 4 => EFFET PARALLAX                       */
+/* **************************************************************** */
+#parallax {
+    background-image:  url("parallax.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-txt {
+
+    position: relative;
+
+    /* The image used                                             */
+    /* background-image: url("parallax.png");                     */
+    background: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1));           */
+
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.parallax-bouton {
+    position: absolute;   
+}
+
+.parallax {
+    position: relative;
+}
+
+/* On met le texte en blanc                                       */
+.parallax-txt h2 {
+    color:white;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px; 
+}
+
+/* On met le texte en blanc                                      */
+.parallax-txt p {
+    color:white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* On met le bouton en blanc et transparent                     */
+.parallax-txt button {
+    color:white;
+    background: transparent;
+    border: 1px solid white;
+    justify-content: center;
+    bottom: 40%;
+    right: 50%;
+    border-radius: 5px 5px 5px 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.parallax-bouton:hover {
+    background: white;
+    color: rgb(90, 86, 86);
+}
+
+.parallax-img {
+
+}
+
+/* **************************************************************** */
+/*                      PAGE 4 BIS => CLIENT                        */
+/* **************************************************************** */
+.clients-txt h2 {
+    text-align: center;  
+    padding-top: 70px; 
+    padding-bottom: 30px; 
+}
+.clients-txt p {
+    /* padding-right: 500px;
+    padding-left: 500px; */
+    text-align: center; 
+}
+
+.clients-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.clients-img img {
+    width: 150px;
+    padding-right: 50px;
+    filter: brightness(50%);
+}    
+
+.clients-img:hover img {
+    filter: grayscale(0);
+}    
+
+/* **************************************************************** */
+/*                         PAGE 5 => BLOG                           */
+/* **************************************************************** */
+
+.blog-intro {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;    
+}
+
+.blog-intro h2 {
+    font-size: 22px;
+    padding-bottom: 50px;
+}
+
+.blog-allmember {
+    padding-bottom: 70px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;   
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Mise en forme des images                                         */
+.blog-member img {
+    width: 400px;
+    border-radius: 5%;
+}
+
+/* ---------------------------------------------------------------- */
+/* Gestion de l'affiche des infos sur les images au SURVOL          */
+.bloginfo {
+    position: relative;
+    overflow: hidden;
+}
+.infos {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    color: white;
+}
+.bloginfo:hover .infos {
+    left: 10px;
+    top: 10%;   
+    transition: 1s; 
+}
+.blog-member:hover img {
+    filter: brightness(50%);
+}
+
+.imgblog:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* On affiche l'icône + libelle côte à côte                         */
+.infos-l1 {
+    display: flex;
+}
+.infos-l2 {
+    display: flex;
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Mise en forme du texte sous les images                           */
+.blog-member h2 {
+    text-align: left;
+    font-size: 22px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.blog-member p {
+    padding-bottom: 10px;
+    width: 400px;
+    text-align: left;
+    font-size: 16px;
+}
+.blog-member .blog-readmore {
+    padding-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: var(--bt-color);
+}
+/* ---------------------------------------------------------------- */
+
+/* **************************************************************** */
+/*                         PAGE 6 => PRICING                        */
+/* ******************************************************************/
+/* ---------------------------------------------------------------- */
+/* Mise en forme de la partie du haut (texte + image)               */
+.pricing-text {
+    display: flex;     
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pricing-text-g {
+    width: 500px;
+    margin-left: 30px;
+}
+
+.pricing-text-g h2 {
+    padding-bottom: 20px;
+}
+
+.pricing-text-g p {
+    padding-bottom: 20px;
+}
+
+.pricing-image img {
+    width: 400px;
+    object-fit: cover; 
+    padding-left: 50px;
+}
+
+.nb-happy-user {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.pricing-btnlearn {
+    border-radius: 5px 5px 5px 5px;
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+.pricing-btnlearn:hover {
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/*                 PRICING -> Partie Our Princing                   */
+.pricing-tableau {
+    background: rgba(224, 214, 204, 0.548);    
+}
+
+.pricing-intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center; 
+}
+
+.pricing-allprice {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px
+}
+
+.pricing-member {
+    background: white;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px; 
+}
+
+.pricing-member-li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;  
+}
+
+/* On met la bonne couleur sur l'icone (Vert/Rouge)                     */
+/* Création de 2 fonctions green et red que l'on appelle dans le html : */
+/*     <i class="fa-regular fa-circle-check green"> pour mettre l'icône dans la bonne couleur */
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+
+/* On met la 2e case en decalée */
+.pricing-member:nth-child(2) {
+    transform: translateY(-10px);
+}
+
+/* ---------------------------------------------------------------- */
+/* Gestion du carré 20%                                             */
+.bouton-carré20 {
+    z-index: 1;
+    top: 5px;
+    align-items: right;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 0px 10px 0px 10px;
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+}
+.carré20 {
+    padding-left: 33px;
+}
+.pourtest h2 {
+    padding-left: 100px;
+}
+.pourtest {
+    display: flex;  
+}
+/* ---------------------------------------------------------------- */
+/* Affichage du titre Starter/aDVANCED/... */
+.pricing-member h2 {
+    text-align: center; 
+    font-size: 14px;
+    padding-bottom: 10px;  
+    padding-top: 10px;  
+}
+
+/* Affichage du $9/month */
+.duree {
+    display: flex;  
+    justify-content: center; 
+}
+.duree .dollar {
+    font-size: 35px;
+    color: blue;
+}
+.duree .month {
+    font-size: 14px;
+    padding-top: 8%;
+}
+
+.pricing-member p {
+    font-size: 14px;
+    padding-bottom: 10px;  
+}
+
+.pricing-member .pricing-member-li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Gestion du bouton "JOIN NOW" */
+.pricing-btnjoin {
+    border-radius: 5px 5px 5px 5px;
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+    border: none;
+    color: white;
+    width: 150px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.pricing-btnjoin {
+    cursor: pointer;
+}
+
+/* **************************************************************** */
+/*                             FOOTER                               */
+/* **************************************************************** */
+footer {
+   height: 100px;
+   text-align: center;
+   background-color: black; 
+   color:  rgba(89, 176, 211, 0.548);   
+}
+
+footer .nav-link {
+    color:  rgba(89, 176, 211, 0.548);
+}
+
+.footer-image i {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+}
+
+/* **************************************************************** */
+/*                     GESTION VERSION MOBILE                       */
+/* **************************************************************** */
+@media only screen and (max-width: 768px) {
+    main #subscribe .features-allcard{
+      flex-direction: column;      
+    }
+  }
